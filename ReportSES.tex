@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper,oneside,pdflatex,italian,final,twocolumn]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{titlesec}
+
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+
+
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\definecolor{azure(colorwheel)}{rgb}{0.0, 0.5, 1.0}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\singlespacing
+\hypersetup{
+	colorlinks=true,
+	linktoc=all,
+	linkcolor=blue,
+}
+
+\title{Malware Analysis Report}
+\author{Michele Elingiusti - Marco Ernesto Mancuso}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\newcommand{\pedice}[1]{\raisebox{-0.6ex}{\scriptsize #1}}		
+\lstset{language=Pascal}
+\lstset{deletekeywords={and,to,of,type,in,array}}
+\lstset{otherkeywords={input,output}}
+\lstset{numberstyle=\tiny\color{mygray},captionpos=b,}
+\tableofcontents
+
+\section{Overview}
+
+
+
+\end{document}
